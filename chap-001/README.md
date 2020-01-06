@@ -20,7 +20,9 @@ neuron.
 A perceptron takes several binary inputs, `$x_{1},x_{2},...,x_{n}$` and produces a single binary
 output:
 
-`$y=f(x_{1},x_{2},...,x_{n})$`
+```latex
+$y=f(x_{1},x_{2},...,x_{n})$
+```
 
 Rosenblatt proposed a simple rule to compute the output.He introduced weights,
 $w_{1},w_{2},...,w_{n}$ ,real numbers expressing the importance of the respective inputs
@@ -29,8 +31,7 @@ The neuron's output, 0 or 1, is determined by whether the weighted sum `$\sum w_
 Just like the weights, the threshold is a real number which is a parameter of the neuron.
 More precisely in algebraic terms:
 
-```
-
+```latex
 \[
 $output =   \Bigg\{ 0 \quad if  \quad \sum \; w_{j}\;x_{j} \quad < \; threshold \quad
 \quad
@@ -46,7 +47,7 @@ where w and x are vectors whose components are the weights and inputs.
 The second is to more the threshold to the other side of the inequality, and to replace
 what's known as the perceptron's *bias*, `$b\; ==\; - threshold$`
 To have
-```
+```latex
 \[
 $output=\{ 0 \; if  \; w.x \; + b <= 0\quad
 1 \; if \; w.x \; + b > 0$
@@ -66,7 +67,7 @@ and this new class of neurons called logistic neurons. It's useful to remember t
 terminology, since these terms are used by many people working with neural nets. However,
 we'll stick with the sigmoid terminology., and is defined by:
 
-```
+```latex
 \[$ \sigma(z)  = \quad \frac{1}{1 + \exp(-z)}$\]
 ```
 
